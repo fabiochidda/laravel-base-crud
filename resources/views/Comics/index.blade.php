@@ -13,6 +13,7 @@
             <th>Tipo</th>
             <th>Prezzo</th>
             <th>Visualizza</th>
+            <th>Modifica</th>
         </thead>
 
         <tbody>
@@ -43,6 +44,9 @@
                     </td>
                     <td>
                         <a href="{{route('comics.show',$el)}}">Visualizza</a>
+                    </td>
+                    <td>
+                        <a href="{{route('comics.edit',$el)}}">Modifica</a>
                     </td>
                 </tr>
             @endforeach
