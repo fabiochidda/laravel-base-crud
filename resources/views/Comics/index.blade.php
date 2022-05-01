@@ -12,6 +12,7 @@
             <th>Sale Date</th>
             <th>Tipo</th>
             <th>Prezzo</th>
+            <th>Visualizza</th>
         </thead>
 
         <tbody>
@@ -39,6 +40,9 @@
                     </td>
                     <td>
                         {{$el->price}}
+                    </td>
+                    <td>
+                        <a href="{{route('comics.show',$el)}}">Visualizza</a>
                     </td>
                 </tr>
             @endforeach
